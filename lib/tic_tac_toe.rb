@@ -1,4 +1,3 @@
-
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 WIN_COMBINATIONS = [
@@ -25,7 +24,7 @@ def input_to_index(input)
   input.to_i - 1
 end
 
-def move(board, input, token = "X")
+def move(board, input, token)
   board[input] = token
 end
 
