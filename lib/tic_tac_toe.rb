@@ -123,6 +123,6 @@ def play(board)
     puts "The game was a draw"
   end
 end
-Define your WIN_COMBINATIONS constant
+
 
 # Define your play method below
