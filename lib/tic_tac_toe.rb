@@ -74,6 +74,8 @@ def current_player(board)
   end
 end
 
+token = current_player(board)
+
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combos|
