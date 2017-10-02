@@ -113,17 +113,16 @@ def winner(board)
   end
 end
 
-# def play(board)
-#     until over?(board)
-#     current_player(board)
-#     turn(board)
-#   end
-#   if won?(board)
-#     puts "Congratulations #{winner(board)}, you are the winner."
-#   else
-#     puts "The game was a draw"
-#   end
-# end
-# Define your WIN_COMBINATIONS constant
+def play(board)
+    until over?(board)
+    turn(board)
+  end
+  if won?(board)
+    puts "Congratulations #{winner(board)}, you are the winner."
+  else
+    puts "The game was a draw"
+  end
+end
+Define your WIN_COMBINATIONS constant
 
 # Define your play method below
