@@ -32,10 +32,9 @@ def current_player(board)
   end
 end
 
-token = current_player(board)
 
-def move(board, input, token)
-  board[input] = token
+def move(board, input, current_player(board))
+  board[input] = current_player(board)
 end
 
 def position_taken?(board, index)
