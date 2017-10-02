@@ -24,6 +24,16 @@ def input_to_index(input)
   input.to_i - 1
 end
 
+def current_player(board)
+    if turn_count(board) % 2 == 0
+      "X"
+    else
+      "O"
+  end
+end
+
+token = corrent_player(board)
+
 def move(board, input, token)
   board[input] = token
 end
@@ -46,13 +56,7 @@ def turn_count(board)
   counter
 end
 
-def current_player(board)
-    if turn_count(board) % 2 == 0
-      "X"
-    else
-      "O"
-  end
-end
+
 
 def turn(board)
   puts "Please enter 1-9:"
