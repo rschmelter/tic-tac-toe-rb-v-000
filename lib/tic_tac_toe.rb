@@ -32,7 +32,7 @@ def current_player(board)
   end
 end
 
-token = corrent_player(board)
+token = current_player(board)
 
 def move(board, input, token)
   board[input] = token
